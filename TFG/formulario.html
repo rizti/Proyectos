@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    </head>
+    <body>
+    <div id="formularioBusquedaHTML">
+    <form method="post" action="biblioteca-Formulario.php">
+        <div class="card3 mt-2" id="formularioBusqueda">
+            <div class="card-header">
+                <h3 class="mb-0 collapsed" data-toggle="collapse" data-target="#formularioFiltros" aria-controls="formularioFiltros">
+                    <i class="fas fa-caret-right"></i>
+                    <button class="btn" type="button"><strong>FILTROS</strong></button>
+                </h3>
+            </div>
+            <div id="formularioFiltros" class="collapse">
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="generoPri">Genero Primario</label>
+                        </div>
+                        <div class="col">
+                            <select name="generoPri" class="form-control extendSelect select-extend">
+                                <option value="SEINEN">Seinen</option>
+                                <option value="SHOUJO">Shoujo</option>
+                                <option value="SHOUNEN">Shounen</option>
+                                <option value="JOSEI">Josei</option>
+                                <option value="KODOMO">Kodomo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="Genero">Genero</label>
+                        </div>
+                        <div class="col">
+                            <select name="Genero" class="form-control extendSelect select-extend">
+                                <option value="Accion" selected>Accion</option>
+                                <option value="Aventura">Aventura</option>
+                                <option value="Comedia">Comedia</option>
+                                <option value="Drama">Drama</option>
+                                <option value="Ecchi">Ecchi</option>
+                                <option value="Fantasia">Fantasia</option>
+                                <option value="Magia">Magia</option>
+                                <option value="Sobrenatural">Sobrenatural</option>
+                                <option value="Horror">Horror</option>
+                                <option value="Deporte">Deporte</option>
+                                <option value="Mecha">Mecha</option>
+                                <option value="Gore">Gore</option>
+                                <option value="VidaEscolar">Vida Escolar</option>
+                                <option value="Reencarnacion">Reencarnacion</option>
+                                <option value="Superpoderes">Superpoderes</option>
+                                <option value="Demonios">Demonios</option>
+                                <option value="Guerra">Guerra</option>
+                                <option value="Musica">Musica</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="Erotico">Erotico</label>
+                        </div>
+                        <div class="col">
+                            <select name="Erotico" class="form-control extendSelect select-extend" id="Erotico-Formulario-Busqueda">
+                                <option value="Si">Si</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-row">
+                    <div class="col">
+                        <label for="Amateur">Amateur</label>
+                    </div>
+                    <div class="col">
+                        <select name="Amateur" class="form-control extendSelect select-extend"  id="Amateur-Formulario-Busqueda">
+                            <option value="Si">Si</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary btn-block btn-lg" type="submit"> <div id="botonEnviarFormularioBusqueda"><i class="fas fa-book-open" ></i> Aplicar filtros</div></button>
+    </form>
+</div>
+  </body>
+</html>
